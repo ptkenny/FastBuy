@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  head
+    title FastBuy - it's basically the title.
+    link(rel='stylesheet', href='stylesheets/index.css')
+  body
+    div.container(id='container')
+      h1(id='logo') FastBuy
+      form(method='POST' action='/search')
+        div.search-form
+          label(for='search')
+            input.form-control(type='text', id='search', placeholder='Search', name='search')    
+          br
+          label(for='minimumprice')
+            input.form-control(type='text', id='minimumprice', placeholder='Minimum Price(Optional)', name='minimumprice')
+            input.form-control(type='text', id='maximumprice', placeholder='Maximum Price(Optional)', name='maximumprice')
+            br
+            button.btn.btn-primary(type='submit', id='searchbutton') Search
+            br
+            br
+            select(id='selection', name='selection')
+              option(value='amazon') #{'Amazon'}
+              option(value='ebay') #{'eBay'}
+        br
+        br
+        a(href='https://www.amazon.com/tryprimefree?ref_=assoc_tag_ph_1427739975520&_encoding=UTF8&camp=1789&creative=9325&linkCode=pf4&tag=fast1020-20&linkId=681f1cf355e301e03a81c1ead91a1842') Try Amazon Prime!
+        br
+        br
+        a(href='./about') About
+        
